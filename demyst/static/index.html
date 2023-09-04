@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demyst Business Loan Application</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Demyst Business Loan Application</h1>
+    <form id="applicationForm">
+      <div class="form-group">
+        <label for="businessName">Business Name</label>
+        <input type="text" class="form-control" id="businessName" required>
+      </div>
+      <div class="form-group">
+        <label for="loanAmount">Loan Amount</label>
+        <input type="number" class="form-control" id="loanAmount" required>
+      </div>
+      <div class="form-group">
+        <label for="accountingProvider">Accounting Provider</label>
+        <select class="form-control" id="accountingProvider">
+          <option value="Xero">Xero</option>
+          <option value="MYOB">MYOB</option>
+        </select>
+      </div>
+      <button type="button" id="requestBalanceSheet" class="btn btn-primary">Request Balance Sheet</button>
+      <button type="submit" id="submitApplication" class="btn btn-primary">Submit Application</button>
+    </form>
+    <div class="mt-4" id="balanceSheetContainer"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/js/frontend.js"></script>
+</body>
+</html>
